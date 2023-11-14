@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "outDir": "build",
+    "allowJs": true,
+    "baseUrl": ".",
+    "target": "ES2022",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "module": "node16",
+    "moduleResolution": "node16",
+    "strict": true,
+    "lib": ["es2022", "dom"],
+    "types": [
+      "cypress",
+      "cypress-iframe",
+      "node",
+      "cypress-wait-until",
+      "cypress-real-events",
+      "cypress-plugin-api"
+    ],
+    "paths": {
+      "cypress": ["./cypress/*"]
+    }
+  },
+  "exclude": ["node_modules", "build/**/*", "eslint-rules"],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "types": ["node"]
+    }
+  }
+}
